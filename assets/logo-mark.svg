@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">GAMENICA</title>
+  <desc id="desc">Orange and blue GAMENICA wordmark with two wave strokes.</desc>
+  <rect width="720" height="360" fill="none"/>
+  <path d="M72 116C128 6 197 7 249 106c42 80 129 92 187 41 41-37 66-109 131-108 54 1 88 55 115 116" fill="none" stroke="#ff6a00" stroke-width="34" stroke-linecap="round"/>
+  <path d="M37 240c37 110 119 45 183-25 51-55 81-60 132-8 51 53 95 74 139 33 51-48 79-93 134-43 33 31 58 89 95 55" fill="none" stroke="#3294e6" stroke-width="34" stroke-linecap="round"/>
+  <g font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="74">
+    <text x="28" y="184" fill="#ff6a00">GAME</text>
+    <text x="316" y="184" fill="#3294e6">NICA</text>
+  </g>
+</svg>

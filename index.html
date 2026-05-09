@@ -3,69 +3,237 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GAMENICA – Applications And Games Studio</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #1d1d1f;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 24px;
-    }
-    .logo {
-      font-size: 2.6rem;
-      font-weight: 900;
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    .sub {
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      opacity: 0.4;
-      margin-bottom: 60px;
-    }
-    .tagline {
-      font-size: 1.1rem;
-      opacity: 0.6;
-      max-width: 400px;
-      line-height: 1.7;
-      margin-bottom: 48px;
-    }
-    nav a {
-      display: inline-block;
-      margin: 0 12px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.45);
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      transition: color 0.2s;
-    }
-    nav a:hover { color: #fff; }
-    footer {
-      position: fixed;
-      bottom: 24px;
-      font-size: 0.78rem;
-      opacity: 0.25;
-    }
-  </style>
+  <meta name="description" content="GAMENICA is a mobile apps and games studio building playful, useful, and memorable experiences for iOS and Android." />
+  <title>GAMENICA | Mobile Apps & Games Studio</title>
+  <link rel="icon" href="/gamenica1-Photoroom.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/gamenica1-Photoroom.png" />
+  <link rel="preload" href="/gamenica1-Photoroom.png" as="image" />
+  <link rel="stylesheet" href="/assets/site.css" />
 </head>
 <body>
-  <div class="logo">GAMENICA</div>
-  <div class="sub">Applications And Games Studio</div>
-  <p class="tagline">We craft thoughtful mobile apps and games for iOS and Android.</p>
-  <nav>
-    <a href="/privacy-policy/">Privacy Policy</a>
-  </nav>
-  <footer>&copy; 2026 GAMENICA. All rights reserved.</footer>
+  <div class="site-shell">
+    <header class="topbar" aria-label="Site header">
+      <div class="topbar-inner">
+        <a class="brand" href="/" aria-label="GAMENICA home">
+          <img class="brand-mark brand-mark-logo" src="/gamenica1-Photoroom.png" alt="" />
+          <span class="brand-word"><strong>GAME</strong><strong>NICA</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" data-menu-toggle>
+          <span></span>
+        </button>
+        <nav class="nav-links" aria-label="Primary navigation" data-nav-links>
+          <a href="#apps">Apps</a>
+          <a href="#studio">Studio</a>
+          <a href="#next">Next</a>
+          <a href="/support/">Support</a>
+          <a href="/privacy-policy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <canvas id="playfield" aria-hidden="true"></canvas>
+        <div class="hero-content">
+          <img class="hero-logo reveal" src="/gamenica1-Photoroom.png" alt="GAMENICA" />
+          <p class="eyebrow reveal">iOS and Android mobile studio</p>
+          <h1 class="reveal">Apps that feel like <span>play.</span></h1>
+          <p class="hero-copy reveal">GAMENICA builds mobile games, music experiences, educational products, and the next wave of utility apps with the same fast, vivid, touch-first energy.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#apps">Explore Apps</a>
+            <a class="btn btn-secondary" href="https://apps.apple.com/tr/developer/mehmet-nurettin-kahriman/id1065276689" target="_blank" rel="noopener">View on App Store</a>
+          </div>
+          <div class="hero-metrics reveal" aria-label="GAMENICA highlights">
+            <div class="metric">
+              <strong>5</strong>
+              <span>live App Store releases</span>
+            </div>
+            <div class="metric">
+              <strong>iOS + Android</strong>
+              <span>mobile-first publishing</span>
+            </div>
+            <div class="metric">
+              <strong>Next</strong>
+              <span>games, tools, music, and AI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="apps">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">Live portfolio</p>
+              <h2>The kind of app shelf people want to tap through.</h2>
+            </div>
+            <p class="section-lead">The current catalog includes educational games, music-led play, and tactile simulations, with broader GAMENICA releases moving into creative tools, utilities, and intelligent mobile experiences.</p>
+          </div>
+
+          <div class="filters reveal" aria-label="App filters">
+            <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="education" aria-pressed="false">Education</button>
+            <button class="filter-btn" type="button" data-filter="music" aria-pressed="false">Music</button>
+            <button class="filter-btn" type="button" data-filter="simulation" aria-pressed="false">Simulation</button>
+          </div>
+
+          <div class="app-grid">
+            <article class="app-card reveal" data-app-card data-category="simulation game" style="--card-a:#ff6a00;--card-b:#7357ff">
+              <img class="app-icon app-icon-image" src="/assets/app-icons/cute-toddlers-fireworks.jpg" alt="Cute Toddlers Fireworks app icon" loading="lazy" />
+              <div class="app-meta">
+                <span class="pill">Simulation</span>
+                <span class="pill">iPhone + iPad</span>
+              </div>
+              <h3>Cute Toddlers Fireworks</h3>
+              <p>A bright tap-and-burst fireworks experience built for instant, colorful play.</p>
+              <div class="card-actions">
+                <a class="store-link" href="https://apps.apple.com/us/app/cute-toddlers-fireworks/id1065276690?uo=4" target="_blank" rel="noopener">App Store</a>
+                <a class="store-link light" href="/support/">Support</a>
+              </div>
+            </article>
+
+            <article class="app-card reveal" data-app-card data-category="education game" style="--card-a:#3294e6;--card-b:#1fb58f">
+              <img class="app-icon app-icon-image" src="/assets/app-icons/numbers-toddler-fun-education.jpg" alt="Numbers Toddler Fun Education app icon" loading="lazy" />
+              <div class="app-meta">
+                <span class="pill">Education</span>
+                <span class="pill">Games</span>
+              </div>
+              <h3>Numbers Toddler Fun Education</h3>
+              <p>A playful numbers experience that turns early counting into quick, repeatable game moments.</p>
+              <div class="card-actions">
+                <a class="store-link" href="https://apps.apple.com/us/app/numbers-toddler-fun-education/id1067315192?uo=4" target="_blank" rel="noopener">App Store</a>
+                <a class="store-link light" href="/support/">Support</a>
+              </div>
+            </article>
+
+            <article class="app-card reveal" data-app-card data-category="music game" style="--card-a:#ff9a22;--card-b:#3294e6">
+              <img class="app-icon app-icon-image" src="/assets/app-icons/drum-for-toddlers.jpg" alt="Drum For Toddlers app icon" loading="lazy" />
+              <div class="app-meta">
+                <span class="pill">Music</span>
+                <span class="pill">Touch Play</span>
+              </div>
+              <h3>Drum For Toddlers</h3>
+              <p>A simple rhythm playground for tapping, listening, and discovering musical feedback.</p>
+              <div class="card-actions">
+                <a class="store-link" href="https://apps.apple.com/us/app/drum-for-toddlers/id1066821099?uo=4" target="_blank" rel="noopener">App Store</a>
+                <a class="store-link light" href="/support/">Support</a>
+              </div>
+            </article>
+
+            <article class="app-card reveal" data-app-card data-category="music simulation game" style="--card-a:#7357ff;--card-b:#ff6a00">
+              <img class="app-icon app-icon-image" src="/assets/app-icons/fireworks-piano.jpg" alt="Fireworks Piano app icon" loading="lazy" />
+              <div class="app-meta">
+                <span class="pill">Music</span>
+                <span class="pill">Simulation</span>
+              </div>
+              <h3>Fireworks Piano</h3>
+              <p>A piano game with fireworks energy, designed to make every touch feel visual and musical.</p>
+              <div class="card-actions">
+                <a class="store-link" href="https://apps.apple.com/us/app/fireworks-piano/id1066723099?uo=4" target="_blank" rel="noopener">App Store</a>
+                <a class="store-link light" href="/support/">Support</a>
+              </div>
+            </article>
+
+            <article class="app-card reveal" data-app-card data-category="education game" style="--card-a:#1fb58f;--card-b:#3294e6">
+              <img class="app-icon app-icon-image" src="/assets/app-icons/toddler-education-kit.jpg" alt="Toddler Education Kit app icon" loading="lazy" />
+              <div class="app-meta">
+                <span class="pill">Education</span>
+                <span class="pill">Kit</span>
+              </div>
+              <h3>Toddler Education Kit</h3>
+              <p>A compact learning kit that brings letters, numbers, colors, shapes, and more into one app.</p>
+              <div class="card-actions">
+                <a class="store-link" href="https://apps.apple.com/us/app/toddler-education-kit/id1065374341?uo=4" target="_blank" rel="noopener">App Store</a>
+                <a class="store-link light" href="/support/">Support</a>
+              </div>
+            </article>
+
+            <article class="app-card reveal" data-app-card data-category="simulation education music" style="--card-a:#101521;--card-b:#ff6a00">
+              <img class="app-icon app-icon-image" src="/gamenica1-Photoroom.png" alt="GAMENICA upcoming apps" loading="lazy" />
+              <div class="app-meta">
+                <span class="pill">Next</span>
+                <span class="pill">iOS + Android</span>
+              </div>
+              <h3>New GAMENICA experiences</h3>
+              <p>New utilities, creative tools, games, and wider-audience mobile products are coming from the same studio.</p>
+              <div class="card-actions">
+                <a class="store-link" href="/support/">Get Support</a>
+                <a class="store-link light" href="#next">See Direction</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="studio">
+        <div class="wrap studio-band">
+          <div class="device-wall reveal" aria-hidden="true">
+            <div class="phone phone-one"><div class="screen fireworks"><strong>Tap. Burst. Smile.</strong><span>Simulation</span></div></div>
+            <div class="phone phone-two"><div class="screen learning"><strong>Learn through play.</strong><span>Education</span></div></div>
+            <div class="phone phone-three"><div class="screen music"><strong>Rhythm in hand.</strong><span>Music</span></div></div>
+          </div>
+          <div class="studio-copy reveal">
+            <p class="kicker">Studio language</p>
+            <h2>GAMENICA designs experiences that are clear on screen and satisfying in hand.</h2>
+            <p>The portfolio started with friendly games, but the new concept is broader: games, creative tools, music apps, everyday utilities, and platform-native mobile experiences.</p>
+            <div class="capabilities">
+              <div class="capability"><strong>Touch-first</strong><span>Simple gestures, clear feedback, and a smooth sense of motion.</span></div>
+              <div class="capability"><strong>Mobile-native</strong><span>Designed around the expectations of iOS and Android users.</span></div>
+              <div class="capability"><strong>Focused catalog</strong><span>Each release gets a clear story, a direct store path, and simple support.</span></div>
+              <div class="capability"><strong>Privacy-minded</strong><span>Clear policies, practical support, and respectful mobile experiences.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="next">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">Product direction</p>
+              <h2>A broader mobile catalog is taking shape.</h2>
+            </div>
+            <p class="section-lead">GAMENICA is expanding beyond early play experiences into creative, useful, and intelligent mobile products for a wider audience.</p>
+          </div>
+          <div class="roadmap">
+            <article class="roadmap-item reveal" style="--card-a:#3294e6;--card-b:#6dc8ff">
+              <h3>Creative tools</h3>
+              <p>Mobile products for photo, sound, content, and lightweight creation workflows.</p>
+            </article>
+            <article class="roadmap-item reveal" style="--card-a:#ff6a00;--card-b:#ffcf4d">
+              <h3>Arcade games</h3>
+              <p>Short-session games with strong replay value and quick tactile feedback.</p>
+            </article>
+            <article class="roadmap-item reveal" style="--card-a:#1fb58f;--card-b:#3294e6">
+              <h3>Everyday apps</h3>
+              <p>Fast, focused utilities that solve clear mobile tasks without friction.</p>
+            </article>
+            <article class="roadmap-item reveal" style="--card-a:#7357ff;--card-b:#ff6a00">
+              <h3>AI features</h3>
+              <p>Smart assistance, automation, and creative features for future releases.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact">
+        <div class="wrap contact-inner">
+          <h2 class="reveal">Need help with a GAMENICA app?</h2>
+          <div class="hero-actions reveal">
+            <a class="btn btn-blue" href="/support/">Get Support</a>
+            <a class="btn btn-secondary" href="/privacy-policy/">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>&copy; 2026 GAMENICA. All rights reserved.</span>
+        <span><a href="https://apps.apple.com/tr/developer/mehmet-nurettin-kahriman/id1065276689" target="_blank" rel="noopener">App Store</a> | <a href="/support/">Support</a> | <a href="/privacy-policy/">Privacy Policy</a></span>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/site.js"></script>
 </body>
 </html>

@@ -3,135 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – GAMENICA Applications And Games Studio</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f5f5f7;
-      color: #1d1d1f;
-      line-height: 1.7;
-    }
-    header {
-      background: #1d1d1f;
-      color: #fff;
-      padding: 56px 24px 40px;
-      text-align: center;
-    }
-    header .studio {
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      opacity: 0.45;
-      margin-bottom: 14px;
-    }
-    header h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 10px; }
-    header p  { font-size: 0.95rem; opacity: 0.55; max-width: 540px; margin: 0 auto; }
-    nav {
-      background: #fff;
-      border-bottom: 1px solid #e5e5e7;
-      padding: 14px 24px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-    nav a {
-      display: inline-block;
-      margin-right: 20px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: #636366;
-      text-decoration: none;
-    }
-    nav a:hover { color: #1d1d1f; }
-    .container {
-      max-width: 800px;
-      margin: 48px auto;
-      padding: 0 24px 100px;
-    }
-    .section {
-      background: #fff;
-      border-radius: 16px;
-      padding: 32px;
-      margin-bottom: 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    }
-    h2 {
-      font-size: 1.18rem;
-      font-weight: 700;
-      margin-bottom: 14px;
-      color: #1d1d1f;
-    }
-    h3 {
-      font-size: 0.98rem;
-      font-weight: 700;
-      margin: 20px 0 8px;
-      color: #1d1d1f;
-    }
-    h3:first-of-type { margin-top: 4px; }
-    p  { margin-bottom: 12px; font-size: 0.95rem; color: #3a3a3c; }
-    ul { padding-left: 22px; margin-bottom: 12px; }
-    li { margin-bottom: 6px; font-size: 0.95rem; color: #3a3a3c; }
-    a  { color: #0071e3; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .highlight-box {
-      background: #f2f2f7;
-      border-left: 4px solid #007aff;
-      border-radius: 0 10px 10px 0;
-      padding: 14px 18px;
-      margin: 14px 0;
-      font-size: 0.93rem;
-      color: #3a3a3c;
-    }
-    .highlight-box.green  { border-left-color: #34c759; }
-    .highlight-box.orange { border-left-color: #ff9500; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-      margin: 14px 0;
-    }
-    th {
-      text-align: left;
-      padding: 9px 12px;
-      background: #f2f2f7;
-      font-weight: 700;
-      color: #1d1d1f;
-    }
-    td {
-      padding: 9px 12px;
-      border-top: 1px solid #e5e5e7;
-      color: #3a3a3c;
-      vertical-align: top;
-    }
-    .updated {
-      text-align: center;
-      font-size: 0.82rem;
-      color: #8e8e93;
-      margin-top: 48px;
-    }
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      font-size: 0.82rem;
-      color: #8e8e93;
-      border-top: 1px solid #e5e5e7;
-    }
-    footer strong { color: #1d1d1f; letter-spacing: 1px; font-size: 0.9rem; }
-  </style>
+  <title>Privacy Policy | GAMENICA Applications And Games Studio</title>
+  <link rel="icon" href="/gamenica1-Photoroom.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/gamenica1-Photoroom.png" />
+  <link rel="stylesheet" href="/assets/site.css" />
 </head>
-<body>
+<body class="privacy-page">
 
-<header>
+<header class="topbar" aria-label="Site header">
+  <div class="topbar-inner">
+    <a class="brand" href="/" aria-label="GAMENICA home">
+      <img class="brand-mark brand-mark-logo" src="/gamenica1-Photoroom.png" alt="" />
+      <span class="brand-word"><strong>GAME</strong><strong>NICA</strong></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" data-menu-toggle>
+      <span></span>
+    </button>
+    <nav class="nav-links" aria-label="Primary navigation" data-nav-links>
+      <a href="/">Home</a>
+      <a href="/#apps">Apps</a>
+      <a href="/#studio">Studio</a>
+      <a href="/#next">Next</a>
+      <a href="/support/">Support</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<header class="privacy-hero">
   <div class="studio">GAMENICA</div>
   <h1>Privacy Policy</h1>
   <p>This policy applies to all applications and games published by GAMENICA Applications And Games Studio.</p>
 </header>
 
-<nav>
+<nav class="policy-nav">
   <a href="#overview">Overview</a>
   <a href="#data-collected">Data We Collect</a>
   <a href="#how-we-use">How We Use Data</a>
@@ -170,7 +75,7 @@
       <tr>
         <td>Name / Email / Phone</td>
         <td>Never</td>
-        <td>—</td>
+        <td>&mdash;</td>
       </tr>
       <tr>
         <td>Device location</td>
@@ -195,7 +100,7 @@
       <tr>
         <td>Analytics</td>
         <td>Never (we do not integrate analytics SDKs)</td>
-        <td>—</td>
+        <td>&mdash;</td>
       </tr>
     </table>
 
@@ -207,9 +112,9 @@
     <h2>How We Use Information</h2>
     <p>Any information collected is used solely to deliver the core functionality of each app. Specifically:</p>
     <ul>
-      <li><strong>Location data</strong> — used in real time to provide location-based features (e.g. maps, weather, nearby content). It is not stored on our servers or used for profiling.</li>
-      <li><strong>Locally stored preferences</strong> — used to remember your in-app settings and saved content across sessions.</li>
-      <li><strong>Device identifiers (via AdMob)</strong> — used by Google to serve advertisements. See the <a href="#advertising">Advertising</a> section for details and opt-out options.</li>
+      <li><strong>Location data</strong> - used in real time to provide location-based features (e.g. maps, weather, nearby content). It is not stored on our servers or used for profiling.</li>
+      <li><strong>Locally stored preferences</strong> - used to remember your in-app settings and saved content across sessions.</li>
+      <li><strong>Device identifiers (via AdMob)</strong> - used by Google to serve advertisements. See the <a href="#advertising">Advertising</a> section for details and opt-out options.</li>
     </ul>
     <p>We do not use any collected information for marketing, profiling, or resale purposes.</p>
   </div>
@@ -252,8 +157,8 @@
 
     <h3>Opting Out of Personalized Ads</h3>
     <ul>
-      <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Tracking → disable "Allow Apps to Request to Track"</li>
-      <li><strong>Android:</strong> Settings → Google → Ads → "Delete advertising ID"</li>
+      <li><strong>iOS:</strong> Settings &rarr; Privacy &amp; Security &rarr; Tracking &rarr; disable "Allow Apps to Request to Track"</li>
+      <li><strong>Android:</strong> Settings &rarr; Google &rarr; Ads &rarr; "Delete advertising ID"</li>
       <li><strong>EU / EEA / UK:</strong> A consent prompt is shown before any personalized ad is served.</li>
     </ul>
 
@@ -308,13 +213,13 @@
     <h2>Your Rights</h2>
     <p>Depending on your country or region, you may have the following rights regarding your personal data:</p>
     <ul>
-      <li><strong>Right to access</strong> — request a copy of data we hold about you.</li>
-      <li><strong>Right to correction</strong> — request correction of inaccurate data.</li>
-      <li><strong>Right to deletion</strong> — request deletion of your personal data.</li>
-      <li><strong>Right to restrict processing</strong> — request that we limit how we use your data.</li>
-      <li><strong>Right to data portability</strong> — request your data in a portable format.</li>
-      <li><strong>Right to object</strong> — object to data processing based on legitimate interests.</li>
-      <li><strong>Right to withdraw consent</strong> — withdraw consent at any time (e.g. revoke location access via device Settings).</li>
+      <li><strong>Right to access</strong> - request a copy of data we hold about you.</li>
+      <li><strong>Right to correction</strong> - request correction of inaccurate data.</li>
+      <li><strong>Right to deletion</strong> - request deletion of your personal data.</li>
+      <li><strong>Right to restrict processing</strong> - request that we limit how we use your data.</li>
+      <li><strong>Right to data portability</strong> - request your data in a portable format.</li>
+      <li><strong>Right to object</strong> - object to data processing based on legitimate interests.</li>
+      <li><strong>Right to withdraw consent</strong> - withdraw consent at any time (e.g. revoke location access via device Settings).</li>
     </ul>
     <p>Since GAMENICA does not maintain a user database, most data can be managed directly on your device. For location or other permissions, adjust them in your device Settings. To remove all locally stored data, uninstall the app. For any remaining request, contact us at <a href="mailto:mnkahraman@gmail.com">mnkahraman@gmail.com</a>. We respond to all privacy requests within 30 days.</p>
   </div>
@@ -376,5 +281,6 @@
   <span>&copy; 2026 GAMENICA. All rights reserved.</span>
 </footer>
 
+<script src="/assets/site.js"></script>
 </body>
 </html>

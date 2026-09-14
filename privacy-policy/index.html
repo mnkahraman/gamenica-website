@@ -88,13 +88,18 @@
         <td>Device only</td>
       </tr>
       <tr>
-        <td>Device identifiers &amp; IP address</td>
-        <td>Via third-party SDKs (e.g. AdMob)</td>
-        <td>Third-party servers</td>
+        <td>Device identifiers (e.g. app set ID), IP address &amp; approximate location</td>
+        <td>Via Google AdMob, only in apps that show ads</td>
+        <td>Google servers</td>
+      </tr>
+      <tr>
+        <td>App interactions (e.g. ad views and taps)</td>
+        <td>Via Google AdMob, only in apps that show ads</td>
+        <td>Google servers</td>
       </tr>
       <tr>
         <td>Crash / diagnostic logs</td>
-        <td>Via Apple / Google platform tools only</td>
+        <td>Via Apple / Google platform tools, and via Google AdMob in apps that show ads</td>
         <td>Apple / Google servers</td>
       </tr>
       <tr>
@@ -114,9 +119,9 @@
     <ul>
       <li><strong>Location data</strong> - used in real time to provide location-based features (e.g. maps, weather, nearby content). It is not stored on our servers or used for profiling.</li>
       <li><strong>Locally stored preferences</strong> - used to remember your in-app settings and saved content across sessions.</li>
-      <li><strong>Device identifiers (via AdMob)</strong> - used by Google to serve advertisements. See the <a href="#advertising">Advertising</a> section for details and opt-out options.</li>
+      <li><strong>Device and ad data (via AdMob)</strong> - used by Google to serve ads, measure ad performance, and prevent fraud and abuse. See the <a href="#advertising">Advertising</a> section for details and opt-out options.</li>
     </ul>
-    <p>We do not use any collected information for marketing, profiling, or resale purposes.</p>
+    <p>GAMENICA does not use any collected information for its own marketing, profiling, or resale purposes.</p>
   </div>
 
   <!-- THIRD-PARTY SERVICES -->
@@ -146,13 +151,15 @@
   <!-- ADVERTISING -->
   <div class="section" id="advertising">
     <h2>Advertising</h2>
-    <p>Some GAMENICA apps display advertisements served by Google AdMob. When ads are shown, AdMob may collect:</p>
+    <p>Some GAMENICA apps display advertisements served by Google AdMob. When ads are shown, AdMob may collect and share with Google the following data, which is used for advertising, ad measurement, and fraud prevention:</p>
     <ul>
-      <li>Device advertising identifiers (IDFA / Android Advertising ID)</li>
+      <li>Device identifiers (IDFA / Android Advertising ID, or an app set ID where the advertising ID is not available)</li>
       <li>IP address and approximate location</li>
-      <li>App usage and interaction data</li>
+      <li>App usage and interaction data (such as ad views and taps)</li>
+      <li>Diagnostic information about app and SDK performance</li>
       <li>Device type, OS version, language, and time zone</li>
     </ul>
+    <p>This data is encrypted in transit.</p>
     <p>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
 
     <h3>Opting Out of Personalized Ads</h3>
@@ -163,7 +170,7 @@
     </ul>
 
     <div class="highlight-box orange">
-      <strong>Children's apps:</strong> Any GAMENICA app designated for children uses <strong>non-personalized ads only</strong>. No behavioral or interest-based targeting is applied in those apps.
+      <strong>Children's apps:</strong> Any GAMENICA app designated for children uses <strong>non-personalized ads only</strong>. No behavioral or interest-based targeting is applied in those apps. Their ad requests use Google's child-directed settings with a G content rating, and on Android the advertising ID permission is removed.
     </div>
   </div>
 
@@ -183,26 +190,26 @@
     <h2>Children's Privacy</h2>
 
     <div class="highlight-box green">
-      <strong>Apps designed for children collect no personal information from players.</strong>
+      <strong>Apps designed for children never ask players for personal information.</strong> Where such an app shows ads, Google AdMob processes limited device data (such as IP address, approximate location, and device identifiers) only to deliver non-personalized, child-appropriate ads, measure them, and prevent fraud. Personalized and interest-based advertising is disabled in those apps.
     </div>
 
     <h3>COPPA (United States)</h3>
     <p>We comply with the Children's Online Privacy Protection Act (COPPA). Our general-audience apps are not directed at children under 13 and we do not knowingly collect personal information from children under 13 through those apps.</p>
     <p>For apps specifically designed for children, we apply the following additional protections:</p>
     <ul>
-      <li>No personal data is collected.</li>
-      <li>No behavioral advertising is shown.</li>
+      <li>We never ask for or store personal information such as name, email address, phone number, or precise location.</li>
+      <li>No behavioral advertising is shown; ads, where shown, are non-personalized and requested with Google's child-directed settings.</li>
       <li>No social features, in-app chat, or user-generated content.</li>
-      <li>No links to external websites.</li>
+      <li>Links to external websites (such as this Privacy Policy) and in-app purchases are placed behind a parental gate.</li>
       <li>Game progress is saved locally on the device only.</li>
     </ul>
     <p>If you believe a child under 13 has provided personal information through one of our apps, contact us at <a href="mailto:mnkahraman@gmail.com">mnkahraman@gmail.com</a> and we will delete such data promptly.</p>
 
     <h3>GDPR-K (European Union / EEA / UK)</h3>
-    <p>For users in the EU, EEA, or UK, we comply with GDPR and applicable children's data protection requirements. We do not process personal data of children under 16 (or the applicable age in each member state) without verifiable parental consent. In practice, our children's apps collect no personal data at all, making this a non-issue in those apps.</p>
+    <p>For users in the EU, EEA, or UK, we comply with GDPR and applicable children's data protection requirements. We do not process personal data of children under 16 (or the applicable age in each member state) without verifiable parental consent. Our children's apps do not ask for or store personal data; where ads are shown, Google AdMob processes limited device data only to serve non-personalized ads, as described in the <a href="#advertising">Advertising</a> section.</p>
 
     <h3>Google Play Families Policy</h3>
-    <p>Apps published by GAMENICA in the Google Play Families program comply with Google's Families Policy, including restrictions on data collection, advertising targeting, and in-app purchases.</p>
+    <p>Apps published by GAMENICA in the Google Play Families program comply with Google's Families Policy, including restrictions on data collection, advertising targeting, and in-app purchases, and use only ads SDKs that are self-certified for Google Play's Families program (Google AdMob). Their data collection is disclosed in the Data safety section of each app's Google Play listing.</p>
 
     <h3>Apple Kids Category</h3>
     <p>Apps submitted to the Apple App Store Kids category comply with Apple's guidelines, including advertising restrictions and the requirement that no personal data is collected without parental consent.</p>
@@ -222,6 +229,18 @@
       <li><strong>Right to withdraw consent</strong> - withdraw consent at any time (e.g. revoke location access via device Settings).</li>
     </ul>
     <p>Since GAMENICA does not maintain a user database, most data can be managed directly on your device. For location or other permissions, adjust them in your device Settings. To remove all locally stored data, uninstall the app. For any remaining request, contact us at <a href="mailto:mnkahraman@gmail.com">mnkahraman@gmail.com</a>. We respond to all privacy requests within 30 days.</p>
+
+    <h3 id="data-deletion">How to Request Data Deletion</h3>
+    <p>You can request deletion of data related to any GAMENICA app (for example, Toddlers Education Kit) without deleting anything else:</p>
+    <ol>
+      <li>Send an email to <a href="mailto:mnkahraman@gmail.com?subject=Data%20deletion%20request">mnkahraman@gmail.com</a> with the subject "Data deletion request".</li>
+      <li>Include the app name and, if you wish, the device platform (Android or iOS).</li>
+      <li>We confirm and complete your request within 30 days.</li>
+    </ol>
+    <ul>
+      <li><strong>Deleted:</strong> any data GAMENICA holds about you, including the contents of your request once it has been handled. App data stored on your device (game progress, stickers, settings) is deleted when you uninstall the app or clear its storage.</li>
+      <li><strong>Retained:</strong> GAMENICA does not retain app data on its own servers. Data processed by Google AdMob is controlled and retained by Google under its <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener">retention policy</a>; you can also reset or delete your device's advertising ID in your device settings. Purchase records are kept by Google Play or the Apple App Store as required by law.</li>
+    </ul>
   </div>
 
   <!-- SECURITY -->
@@ -247,7 +266,7 @@
   <div class="section">
     <h2>Links to Other Sites</h2>
     <p>Our apps and this website may contain links to third-party websites or services. We are not responsible for the privacy practices of those sites and encourage you to review their privacy policies before providing any personal information.</p>
-    <p>Apps designed for children do not contain links to external websites.</p>
+    <p>In apps designed for children, links to external websites are placed behind a parental gate.</p>
   </div>
 
   <!-- CHANGES -->
@@ -271,7 +290,7 @@
     <p>We aim to respond to all inquiries within 30 days.</p>
   </div>
 
-  <p class="updated">Last updated: May 2026</p>
+  <p class="updated">Last updated: September 2026</p>
 
 </div>
 

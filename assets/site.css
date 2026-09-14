@@ -816,7 +816,8 @@ input {
   font-weight: 750;
 }
 
-.privacy-page ul {
+.privacy-page ul,
+.privacy-page ol {
   padding-left: 22px;
 }
 

@@ -103,8 +103,18 @@
         <td>Apple / Google servers</td>
       </tr>
       <tr>
+        <td>Purchase &amp; subscription status</td>
+        <td>Via Adapty, only in apps that offer subscriptions</td>
+        <td>Adapty servers</td>
+      </tr>
+      <tr>
+        <td>App events (e.g. app opened, purchase) &amp; basic device information</td>
+        <td>Via the Meta SDK, only in apps promoted with Meta ad campaigns; never in apps designed for children</td>
+        <td>Meta servers</td>
+      </tr>
+      <tr>
         <td>Analytics</td>
-        <td>Never (we do not integrate analytics SDKs)</td>
+        <td>Never (we do not integrate general-purpose analytics SDKs; purchase and ad-measurement services are listed above)</td>
         <td>&mdash;</td>
       </tr>
     </table>
@@ -120,6 +130,8 @@
       <li><strong>Location data</strong> - used in real time to provide location-based features (e.g. maps, weather, nearby content). It is not stored on our servers or used for profiling.</li>
       <li><strong>Locally stored preferences</strong> - used to remember your in-app settings and saved content across sessions.</li>
       <li><strong>Device and ad data (via AdMob)</strong> - used by Google to serve ads, measure ad performance, and prevent fraud and abuse. See the <a href="#advertising">Advertising</a> section for details and opt-out options.</li>
+      <li><strong>Purchase and subscription status (via Adapty)</strong> - used to unlock the subscription content you paid for, to restore it on your other devices, and to tell us how many subscriptions are active. It is tied to an anonymous app user ID, not to your name or email.</li>
+      <li><strong>App events (via the Meta SDK)</strong> - used to measure which ad campaigns bring people to the app. The apps concerned do not ask for tracking permission and do not collect the advertising identifier; Meta reports the results in aggregate.</li>
     </ul>
     <p>GAMENICA does not use any collected information for its own marketing, profiling, or resale purposes.</p>
   </div>
@@ -140,6 +152,12 @@
 
     <h3>Cloudflare</h3>
     <p>Some apps route API requests through Cloudflare infrastructure for security and performance. Cloudflare may log request metadata (IP address, timestamps). Their privacy policy: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a>.</p>
+
+    <h3>Adapty</h3>
+    <p>Used in apps that offer subscriptions, to manage the subscription and related purchases. Adapty receives the purchase receipt, the product bought, the subscription status and an anonymous app user ID, so the app can tell whether your access is active. It does not receive your name or email address. Their privacy policy: <a href="https://adapty.io/privacy/" target="_blank" rel="noopener">adapty.io/privacy</a>.</p>
+
+    <h3>Meta (Facebook) SDK</h3>
+    <p>Used only in apps we promote with Meta ad campaigns, and never in apps designed for children. The SDK reports app events such as the app being opened, the introduction being finished, a song being listened to the end and a purchase, so Meta can measure the campaign. These apps do not ask for tracking permission, the advertising identifier is not collected, and Meta reports the results in aggregate. Their privacy policy: <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a>.</p>
 
     <h3>Google AdMob</h3>
     <p>Used for in-app advertising where applicable. See the <a href="#advertising">Advertising</a> section below.</p>
@@ -290,7 +308,7 @@
     <p>We aim to respond to all inquiries within 30 days.</p>
   </div>
 
-  <p class="updated">Last updated: September 2026</p>
+  <p class="updated">Last updated: October 2026</p>
 
 </div>
 
